@@ -11,10 +11,10 @@ class MiCard extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'MiCard',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.pink,
       ),
       home: Scaffold(
-        backgroundColor: Colors.blue.shade900,
+        backgroundColor: const Color.fromARGB(255, 168, 9, 43),
         appBar: AppBar(
           title: Text('MiCard'),
           backgroundColor: Colors.blue.shade800,
@@ -30,7 +30,7 @@ class MiCard extends StatelessWidget {
                 children: <Widget>[
                   CircleAvatar(
                     radius: 50.0,
-                    backgroundImage: AssetImage('assets/1.png'),
+                    backgroundImage: AssetImage('assets/profile.jpg'),
                   ),
                   SizedBox(height: 20.0),
                   Text(
@@ -58,7 +58,7 @@ class MiCard extends StatelessWidget {
                     ),
                   ),
                   Text(
-                    'City, Country',
+                    'City',
                     style: TextStyle(
                       fontSize: 20.0,
                       color: Colors.grey.shade600,
